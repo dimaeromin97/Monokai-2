@@ -134,6 +134,7 @@
 				"punctuation.definition.end.bracket",
 				"punctuation.definition.array",
 				"punctuation.definition.begin",
+				"punctuation.definition.end",
 				"punctuation.definition.parameters",
 				"punctuation.definition.arguments",
 				"punctuation.definition.section",
@@ -150,6 +151,8 @@
 				"punctuation.definition.entity.begin.bracket.square",
 				"punctuation.definition.entity.end.bracket.square",
 				"punctuation.terminator.expression",
+				"meta.brace.square",
+				"punctuation.definition.string"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -536,8 +539,6 @@
 				"variable.function",
 				"meta.method-call",
 				"meta.function-call",
-				"meta.function-call.js",
-				"meta.var.expr.js",
 				"storage.type.function",
 				"meta.var.expr.js storage.type.js"
 			],
@@ -548,7 +549,10 @@
 		},
 		{
 			"name": "Class name",
-			"scope": "meta.object-literal.key.js entity.name.function.js ",
+			"scope": [
+				"meta.object-literal.key.js entity.name.function.js",
+				"meta.definition.function"
+			],
 			"settings": {
 				"foreground": "#A6E22E"
 			}
