@@ -121,6 +121,7 @@
 			"name": "Template Definition",
 			"scope": [
 				"punctuation.definition.template-expression",
+				"punctuation.definition.block.tag.jsdoc"
 			],
 			"settings": {
 				"foreground": "#F92672"
@@ -141,18 +142,19 @@
 				"punctuation.section",
 				"punctuation.accessor.js",
 				"meta.brace.round.js",
-				"punctuation.separator.delimiter",
+				//"punctuation.separator.delimiter",
 				"punctuation.definition.class.begin.bracket.curly",
 				"punctuation.definition.class.end.bracket.curly",
 				"punctuation.definition.storage-type.begin.bracket.round",
 				"punctuation.definition.storage-type.end.bracket.round",
-				"punctuation.definition.block",
 				"punctuation.definition.dictionary",
 				"punctuation.definition.entity.begin.bracket.square",
 				"punctuation.definition.entity.end.bracket.square",
 				"punctuation.terminator.expression",
 				"meta.brace.square",
-				"punctuation.definition.string"
+				"punctuation.definition.block",
+				"punctuation.definition.string",
+				"meta.object-binding-pattern-variable"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -317,7 +319,7 @@
 		},
 		{
 			"name": "Parameters and this",
-			"scope": "entity.name.variable.parameter, keyword.other.this, keyword.other.base",
+			"scope": "variable.parameter, keyword.other.this, keyword.other.base",
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#FD971F"
@@ -363,14 +365,6 @@
 			}
 		},
 		{
-			"name": "Library function",
-			"scope": "support.function",
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#A6E22E"
-			}
-		},
-		{
 			"name": "Library constant",
 			"scope": "support.constant",
 			"settings": {
@@ -380,7 +374,7 @@
 		},
 		{
 			"name": "Library class/type",
-			"scope": "support.type, support.class",
+			"scope": "support.type, support.class, entity.other.alias.php",
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#16b1d0"
@@ -540,11 +534,20 @@
 				"meta.method-call",
 				"meta.function-call",
 				"storage.type.function",
-				"meta.var.expr.js storage.type.js"
+				"meta.var.expr.js storage.type.js",
+				"support.variable.object.node",
 			],
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#66D9EF"
+			}
+		},
+		{
+			"name": "Function call",
+			"scope": "meta.function.parameters.php storage.type.php",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#16b1d0"
 			}
 		},
 		{
